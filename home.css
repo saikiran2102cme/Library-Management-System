@@ -1,0 +1,366 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    background-color: #000000;
+    color: #ffffff;
+}
+
+.side_panel {
+    border-radius: 8px;
+    height: fit-content;
+    width: fit-content;
+    padding-right: 10px; 
+    background-color: #FCA311;
+    position: fixed;
+    margin-top: -20px;
+}
+
+#panel-open, #panel-close {
+    cursor: pointer;
+}
+
+#panel-close {
+    display: none;
+    margin-top: 10px;
+}
+
+.icon {
+    width: 30px;
+    cursor: pointer;
+}
+
+#light-mode {
+    /* margin: 20px;  */
+    height: 30px;
+    width: 30px;
+    cursor: pointer;
+}
+
+.logo {
+    height: 50px;
+    width: 50px;
+    display: none;
+    border-radius: 25px;
+    cursor: pointer;
+}
+
+.icon-night,.icon-light {
+    height: 30px;
+    width: 30px;
+    display: none; 
+    cursor: pointer;
+}
+#theme{
+    cursor: pointer;
+}
+#theme2{
+    color:transparent;
+    margin-left: -33px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+.image {
+    display: inline-block;  
+}
+
+.text {
+    text-align: center;
+}
+
+ul {
+    margin-top: -20px;
+}
+
+.library, .platform-description {
+    margin-left: 110px;
+}
+
+.library a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.buisness-and-economics {
+    font-size: 32px;
+    font-weight: bolder;
+}
+
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+header {
+    text-align: center;
+    color: white;
+    margin-bottom: 40px;
+    padding: 20px;
+}
+
+header h1 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+header p {
+    font-size: 1.1em;
+    opacity: 0.9;
+}
+
+.search-section {
+    background: white;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    margin-bottom: 30px;
+}
+
+.search-type {
+    display: flex;
+    gap: 30px;
+    margin-bottom: 20px;
+    justify-content: center;
+}
+
+.search-type label {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 1em;
+    cursor: pointer;
+    color: #333;
+}
+
+.search-type input[type="radio"] {
+    width: 18px;
+    height: 18px;
+    cursor: pointer;
+}
+
+.search-form {
+    display: flex;
+    gap: 10px;
+}
+
+#searchInput {
+    flex: 1;
+    padding: 15px 20px;
+    font-size: 1em;
+    border: 2px solid #e0e0e0;
+    border-radius: 8px;
+    outline: none;
+    transition: border-color 0.3s;
+}
+
+#searchInput:focus {
+    border-color: #667eea;
+}
+
+#searchBtn {
+    padding: 15px 35px;
+    font-size: 1em;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+#searchBtn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(102, 126, 234, 0.4);
+}
+
+#searchBtn:active {
+    transform: translateY(0);
+}
+
+.loading {
+    text-align: center;
+    padding: 40px;
+    background: white;
+    border-radius: 15px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+}
+
+.spinner {
+    width: 50px;
+    height: 50px;
+    border: 5px solid #f3f3f3;
+    border-top: 5px solid #667eea;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+    margin: 0 auto 15px;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+.loading p {
+    color: #666;
+    font-size: 1.1em;
+}
+
+.results-info {
+    background: white;
+    padding: 15px 25px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+    color: #333;
+    font-weight: 500;
+}
+
+.results-container {
+    display: grid;
+    gap: 20px;
+}
+
+.book-card {
+    background: white;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.book-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.15);
+}
+
+.book-card h3 {
+    color: #333;
+    font-size: 1.4em;
+    margin-bottom: 12px;
+    line-height: 1.4;
+}
+
+.book-info {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    color: #666;
+}
+
+.book-info-item {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.book-info-label {
+    font-weight: 600;
+    color: #667eea;
+    min-width: 80px;
+}
+
+.book-info-value {
+    color: #333333;
+}
+
+.error-message {
+    background: #fff3cd;
+    border: 2px solid #ffc107;
+    color: #856404;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    font-size: 1.1em;
+}
+
+.hidden {
+    display: none;
+}
+
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2em;
+    }
+
+    .search-section {
+        padding: 20px;
+    }
+
+    .search-type {
+        flex-direction: column;
+        gap: 15px;
+        align-items: flex-start;
+    }
+
+    .search-form {
+        flex-direction: column;
+    }
+
+    #searchBtn {
+        width: 100%;
+    }
+}
+
+.image {
+    height: 50px;
+}
+
+ .icon , .text, .icon-light{
+    display: inline-block;
+    margin-top: 10px;
+    margin-left: 20px;
+  
+}
+
+.icon-night{
+   margin-top: 10px;
+}
+.icon {
+    margin-bottom: -12px;
+} 
+
+.text{
+    height: 30px;
+    line-height: 30px;
+    display: none;
+}
+
+ .profile, .category, .theme, .operations {
+    margin-bottom: 20px;
+} 
+
+.project-description {
+    max-width: 900px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #ffffff;
+    color: #000000;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.about_us {
+    background-color: #333333;
+    height: max-content;
+    width: 100%;
+}
+
+.about_us h1 {
+    color: #ffffff;
+    text-align: center;
+    padding: 20px;
+    text-decoration: overline;
+}
+
+.about_us * {
+    text-align: center;
+}

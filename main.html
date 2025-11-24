@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name= "viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="home.css">
+    <link rel="icon" type="image/jpeg" href="https://i.postimg.cc/257dpKGk/logo.jpg">
+    <title>Bookverse</title>
+</head>
+<body>
+    <div class="side_panel">
+        <div class="operations">
+            <img src="https://i.postimg.cc/qvZHXQnn/menu.png" alt="menu" id="panel-open" class="icon" onclick="open_panel()">
+            <img src="https://i.postimg.cc/cJgyDYMY/logo.jpg" alt="logo" class="logo">
+            <img src="https://i.postimg.cc/RZbxQGfF/close.png" alt="close" id="panel-close" class="icon" onclick="close_panel()">
+        </div>
+        <div class="elements">
+            <div class="profile">
+                <div class="image">
+                    <a href="user account.html">
+                        <img src="https://i.postimg.cc/8kyHFbzv/user.png" alt="user_profile" class="icon">
+                        <div class="text">Profile</div>
+                    </a>
+                </div>
+            </div>
+            <div class="category">
+                <a href="#container">
+                    <div class="image">
+                        <img src="https://i.postimg.cc/DzJkCsd4/search.png" alt="categories" class="icon">
+                        <div class="text">Search</div>
+                    </div>
+                </a>
+            </div>
+            <div class="theme">
+                <div class="image">
+                    <img src="https://i.postimg.cc/ZY8rcn6p/light-mode.png" alt="light" class="icon-light" id="light-mode" onclick="theme_light()">
+                    <img src="https://i.postimg.cc/0yTQFdsy/night-mode.png" alt="night" class="icon-night" id="night-mode" onclick="theme_night()">
+                    <div id="theme" class="text" onclick="theme_light()">Theme</div>
+                     <a id="theme2" onclick="theme_night()">Dark</a> 
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="project-description">
+        <div class="heading">
+            <h1>BOOKVERSE: A Digital Library Book Finder</h1>
+            <br>
+            <h3>Introduction</h3>
+            <br>
+            <p>In the digital age, access to literature has undergone a dramatic transformation. Physical libraries, while timeless, are increasingly complemented and enhanced by digital platforms that bring a vast world of books to our fingertips. BookVerse: A Digital Library Book Finder is a web-based platform designed to simplify book discovery for readers, students, and researchers. Utilizing the extensive Open Library database, BookVerse enables users to find books by author names or discover authors by book titles—all through a seamless and intuitive interface.BookVerse brings together the benefits of advanced technology and open data, eliminating barriers to literary exploration. Readers can connect with countless titles and authors without the limitations of geography or library membership, making this platform a valuable asset in the modern pursuit of knowledge.</p>
+            <br>
+            <h3>Objective of the Application</h3>
+            <br>
+            <p>BookVerse was conceptualized with the mission to empower users to effortlessly explore books and authors in an engaging, efficient, and visually pleasing manner. The application is centered on two primary tasks:
+                <ol>
+                    <li>Book Search – Users can input the name of an author to receive a comprehensive list of books written by that individual, complete with publication details and related information.</li>
+                    <li>Author Search – Those familiar with a specific book title but unsure about its author can simply enter the title to instantly retrieve the relevant author’s name and profile.</li>
+                </ol>
+                By seamlessly integrating data from the Open Library through its API, BookVerse ensures that users have access to richly detailed and up-to-date bibliographic information without needing to visit multiple sources or maintain their own database.
+            </p>
+            <br>
+            <h3>System Design and Architecture</h3>
+            <br>
+            <p>BookVerse is crafted with a modular, web-based design that ensures ease of use, scalability, and efficient integration with the Open Library API. The system is structured in three main layers:
+                <ol>
+                    <li>Frontend Layer – The frontend is the portal where users interact with BookVerse. Built using technologies like HTML, CSS, and JavaScript, it delivers a fast, responsive, and aesthetically pleasing user experience. The clean interface encourages user engagement and simplifies navigation.</li>
+                    <li>Backend API Integration – Instead of providing its own large database, BookVerse fetches data from the Open Library in real time using API calls. This approach provides instant, live access to millions of books and authors across diverse genres, making the application lightweight yet comprehensive.</li>
+                    <li>Presentation Layer – The retrieved information is processed and displayed in an organized, attractive manner, including book titles, author names, publication data, and cover thumbnails where available.</li>
+                </ol>
+                Such a layered architecture guarantees flexibility, reliability, and smooth functionality, while minimizing maintenance requirements and allowing for future enhancements.
+            </p>
+            <br>
+            <h3>Key Features</h3>
+            <br>
+            <p>BookVerse distinguishes itself with a set of thoughtfully developed features that heighten its utility and user enjoyment:</p>
+            <br>
+            <p>
+                <ul>
+                    <li>Real-time Results – Data is fetched instantly and directly from Open Library, guaranteeing up-to-date information.</li>
+                    <li>User-friendly Interface – A clean, intuitive layout puts all key features within easy reach.</li>
+                    <li>Comprehensive Book Details – Users are presented with critical details such as editions, publication year, author profiles, and book covers, where available.</li>
+                    <li>Error Handling – The interface provides clear, helpful messages if searches return no results or if data is unavailable.</li>
+                    <li>Responsive Design – The application functions seamlessly across desktops, tablets, and smartphones, ensuring accessibility on any device.</li>
+                </ul>
+                Overall, these features create an engaging and practical solution for book lovers, students, educators, and academic researchers alike.
+            </p>
+            <br>
+            <h3>Advantages of the Application</h3>
+            <br>
+            <p>BookVerse is more than just a book finder—it is a bridge between users and a global repository of knowledge. Some of its notable advantages include:</p>
+            <br>
+            <p>
+                <ul>
+                    <li>Instant Access to Bibliographic Data – Get detailed, authoritative information for millions of books and authors worldwide.</li>
+                    <li>Promotion of Reading and Research – By simplifying access to literature, BookVerse encourages a lifelong habit of reading and supports academic research.</li>
+                    <li>Open-source, Cost-free Data – Built around the philosophy of open access, BookVerse leverages the Open Library’s free API, eliminating commercial restrictions and licensing costs.</li>
+                    <li>Reduced Dependence on Physical Libraries – Users can conduct front-line research and find reading material without visiting a library in person.</li>
+                    <li>Educational Support – The application serves as an excellent tool for educators and students, giving them a reliable, always-on reference for book and author searches.</li>
+                </ul>
+                For developers and tech learners, BookVerse is also an excellent demonstration of the practical application of public APIs in web-based projects.
+            </p>
+            <br>
+            <h3>Future Scope</h3>
+            <br>
+            <p>Though already robust in its current incarnation, BookVerse offers significant potential for future growth and innovation. Planned and possible enhancements include:</p>
+            <br>
+            <p>
+                <ul>
+                    <li>User Accounts and Bookmarks – Letting readers create personal profiles and save favorite books or searches for quick access later.</li>
+                    <li>Genre-based Filtering – Adding the ability to filter searches by subject, genre, or publication date for more refined results.</li>
+                    <li>Integration with E-Book Platforms – Directing users to legal digital copies or lending libraries where they can read or borrow books online.</li>
+                    <li>Personalized Recommendation Engine - Suggesting new books or authors based on users’ past searches or declared areas of interest.</li>
+                    <li>Offline Access – Allowing previously viewed book and author details to be saved for reference without an internet connection.</li>
+                </ul>
+                Such developments could transform BookVerse from a powerful search tool into a comprehensive digital reading platform, furthering its impact and outreach.
+            </p>
+            <br>
+            <h3>Conclusion</h3>
+            <br>
+            <p>
+                BookVerse represents a forward-thinking approach to digital librarianship—one that aims to democratize access to literature for users everywhere. By leveraging the vast, open-source data of the Open Library through efficient, real-time API integration, BookVerse makes the world of books accessible in just a few clicks. Its modern interface, simplicity, and reliability make it an indispensable tool for students, researchers, and everyday readers. In a time when the free flow of information is more important than ever, BookVerse stands out as a powerful ally in the pursuit and enjoyment of knowledge. Whether used for academic research or personal discovery, it brings the globe’s literary treasures closer to all—anytime, anywhere.
+            </p>
+        </div>
+    </div>
+    <div class="container" id="container">
+        <header class="container-heading">
+            <h1>📚 Book Search</h1>
+            <p>Search books using Open Library API</p>
+        </header>
+
+        <div class="search-section">
+            <div class="search-type">
+                <label>
+                    <input type="radio" name="searchType" value="title" checked>
+                    <p class="input_text">Search by Title</p>
+                </label>
+                <label>
+                    <input type="radio" name="searchType" value="author">
+                    <p class="input_text">Search by Author</p>
+                </label>
+            </div>
+
+            <div class="search-form">
+                <input 
+                    type="text" 
+                    id="searchInput" 
+                    placeholder="Enter book title or author name..."
+                    autocomplete="off"
+                >
+                <button id="searchBtn">Search</button>
+            </div>
+        </div>
+
+        <div id="loadingIndicator" class="loading hidden">
+            <div class="spinner"></div>
+            <p>Searching...</p>
+        </div>
+
+        <div id="resultsInfo" class="results-info hidden"></div>
+
+        <div id="resultsContainer" class="results-container"></div>
+
+        <div id="errorMessage" class="error-message hidden"></div>
+    </div>
+    <div class="about_us">
+        <h1>About us</h1>
+        <p>BookVerse is a digital library book finder dedicated to enhancing access to global literary resources. Our platform enables users to efficiently search for books by author or identify authors by book title, powered by comprehensive open-source bibliographic data.</p>
+        <br>
+        <p>We strive to deliver a reliable, user-friendly experience for students, educators, and book enthusiasts. Committed to educational advancement and technological innovation, BookVerse streamlines the process of discovering and referencing literature, supporting lifelong learning for all.</p>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+</body>
+<script src="home.js"></script>
+<script src="login_page.js"></script>
+</html>

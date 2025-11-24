@@ -1,0 +1,24 @@
+{
+    "login details": [
+        {
+            "email_id" : "psaikiran2102@gmail.com",
+            "password" : "k2i1r0a2n"
+        },
+        {
+            "email_id" : "harshith@gmail.com",
+            "password" : "harshith"
+        },
+        {
+            "email_id" : "laxman@gmail.com",
+            "password" : "laxman"
+        },
+        {
+            "email_id" : "bss2004@gmail.com",
+            "password" : "sampath"
+        },
+        {
+            "email_id" : "ganagalla_kiran@gmail.com",
+            "password" : "ganagalla_kiran"
+        }
+    ]
+}

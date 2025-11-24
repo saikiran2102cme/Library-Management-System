@@ -1,0 +1,35 @@
+h1 {
+    text-align: center;
+    font-family: Verdana;
+    text-decoration: overline;
+}
+
+.container-profile {
+    border-style: solid; 
+    border-color: #000000; 
+    border-width: 4px; 
+    border-radius: 20px; 
+    border-style: solid;
+    border-spacing: 0px;
+}
+
+legend {
+    text-align: center;
+}
+
+legend h1 {
+    text-align: center;
+}
+
+.profile {
+    height: 100px;
+    width: 100px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.message {
+    color: #ff0000;
+    font-weight: bolder;
+    font-size: 20px;
+}
